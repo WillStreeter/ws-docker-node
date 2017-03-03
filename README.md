@@ -1,2 +1,2 @@
-# ws-docker-node
+# ws-node-docker
 Alpine Node Image

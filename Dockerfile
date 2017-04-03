@@ -22,7 +22,7 @@ RUN echo "$APK_MIRROR/alpine/v3.5/main" >> /etc/apk/repositories && \
         python \
         tar
 
-RUN rm -rf /tmp/* /var/cache/apk/* \cd w
+RUN rm -rf /tmp/* /var/cache/apk/* \
     && npm config set progress false -g \
     && mkdir -p /app
 

@@ -1,4 +1,4 @@
-FROM mhart/alpine-node:7.7.4
+FROM mhart/alpine-node:7.9.0
 
 MAINTAINER Will Streeter <will.streeter@gmail.com>
 
@@ -22,8 +22,8 @@ RUN echo "$APK_MIRROR/alpine/v3.5/main" >> /etc/apk/repositories && \
         python \
         tar
 
-RUN rm -rf /tmp/* /var/cache/apk/* \cd w
-    && npm config set progress false -g \
-    && mkdir -p /app
+RUN rm -rf /tmp/* /var/cache/apk/* \cd w  && \
+       npm config set progress false -g  && \
+       mkdir -p /app
 
 ENV HOME /app
